@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Pho 2 | New York</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  /* Base */
+  body {
+    margin:0; font-family: 'Inter', sans-serif; color:#1A1A1A;
+    background:#FFFFFF; line-height:1.6;
+  }
+  a { text-decoration:none; color:inherit; }
+  img { max-width:100%; height:auto; }
+
+  /* Navbar */
+  header {
+    display:flex; justify-content:space-between; align-items:center;
+    padding:1rem 2rem; position:sticky; top:0; background:#FFF;
+    box-shadow:0 1px 5px rgba(0,0,0,0.1); z-index:100;
+  }
+  header .logo { font-size:1.8rem; font-weight:700; color:#E63946; }
+  nav a { margin:0 1rem; font-weight:600; color:#1A1A1A; }
+  .btn-order {
+    padding:0.6rem 1.4rem; background:#E63946; color:#FFF;
+    font-weight:600; border-radius:4px;
+  }
+
+  /* Hero */
+  .hero {
+    text-align:center; padding:4rem 2rem;
+    background:url('https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg')
+      center/cover no-repeat;
+    color:#FFF;
+  }
+  .hero h1 { font-size:2.8rem; font-weight:700; margin-bottom:1rem; }
+  .hero p { font-size:1.2rem; margin-bottom:1.5rem; }
+
+  /* Section */
+  section { padding:3rem 2rem; max-width:1100px; margin:auto; }
+
+  /* About */
+  .about { text-align:center; color:#6C6C6C; }
+
+  /* Menu Grid */
+  .menu-grid {
+    display:grid; gap:1.8rem;
+    grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+  }
+  .menu-card {
+    border:1px solid #EEE; border-radius:8px;
+    padding:1.4rem; background:#FFF;
+  }
+  .menu-card h4 { margin:0 0.5rem 0.6rem; font-weight:600; }
+  .menu-card small { color:#6C6C6C; display:block; margin-bottom:0.5rem; }
+  .menu-card .price { font-weight:700; color:#E63946; }
+
+  /* Footer */
+  footer {
+    text-align:center; padding:1.8rem 2rem; font-size:0.9rem;
+    color:#6C6C6C; border-top:1px solid #EEE;
+  }
+
+  /* Responsive */
+  @media(max-width:768px) {
+    header { flex-direction:column; }
+    nav { margin-top:0.6rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+  <div class="logo">The Pho 2</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#order" class="btn-order">Order Online</a>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <h1>Authentic Vietnamese — Right in NYC</h1>
+  <p>Fresh pho, bold flavors, and quality ingredients.</p>
+  <a href="#order" class="btn-order">Order Now</a>
+</section>
+
+<!-- About -->
+<section id="about" class="about">
+  <h2>About The Pho 2</h2>
+  <p>
+    Nestled in the heart of New York City, The Pho 2 brings you authentic Vietnamese soups,
+    savory appetizers, and modern twists on classic favorites — crafted with care and served fast.
+  </p>
+</section>
+
+<!-- Menu -->
+<section id="menu">
+  <h2>Our Menu</h2>
+  <div class="menu-grid">
+
+    <!-- Example pulled from the online menu -->
+    <div class="menu-card">
+      <h4>Goi Cuon / Fresh Spring Rolls</h4>
+      <small>Lettuce, shrimp, herbs wrapped in rice paper</small>
+      <div class="price">$6.95</div>
+    </div>
+
+    <div class="menu-card">
+      <h4>Cha Gio / Fried Spring Rolls</h4>
+      <small>2 pcs, crispy pork rolls</small>
+      <div class="price">$7.50</div>
+    </div>
+
+    <div class="menu-card">
+      <h4>Edamame</h4>
+      <small>Steamed soybeans, sea salt</small>
+      <div class="price">$5.95</div>
+    </div>
+
+    <!-- Add additional items here from menu -->
+    <!-- You can auto-generate these with JS or manually paste more -->
+
+  </div>
+  <p style="text-align:center; margin-top:1.5rem;">
+    Full menu and ordering through
+    <a href="https://www.thepho2ny.com/imuu4y89/the-pho-2-new-york-10011/order-online?menu=All+Day+Menu&category=Appetizers#menu-section"
+       target="_blank" style="color:#E63946;">Online Menu & Ordering</a>.
+  </p>
+</section>
+
+<!-- Order CTA -->
+<section id="order" style="text-align:center;">
+  <a href="https://www.thepho2ny.com/imuu4y89/the-pho-2-new-york-10011/order-online" class="btn-order">Order Online</a>
+</section>
+
+<!-- Location & Hours -->
+<section>
+  <h2>Visit Us</h2>
+  <p>
+    123 Example Street<br>
+    New York, NY 10011<br>
+    <strong>Hours:</strong> Daily 11am – 10pm
+  </p>
+</section>
+
+<!-- Footer -->
+<footer>
+  © 2026 The Pho 2 – All rights reserved
+</footer>
+
+</body>
+</html>
