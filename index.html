@@ -2,154 +2,133 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<title>The Pho 2 | Authentic Vietnamese in NYC</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Pho 2 | New York</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-  /* Base */
-  body {
-    margin:0; font-family: 'Inter', sans-serif; color:#1A1A1A;
-    background:#FFFFFF; line-height:1.6;
-  }
-  a { text-decoration:none; color:inherit; }
-  img { max-width:100%; height:auto; }
-
-  /* Navbar */
-  header {
-    display:flex; justify-content:space-between; align-items:center;
-    padding:1rem 2rem; position:sticky; top:0; background:#FFF;
-    box-shadow:0 1px 5px rgba(0,0,0,0.1); z-index:100;
-  }
-  header .logo { font-size:1.8rem; font-weight:700; color:#E63946; }
-  nav a { margin:0 1rem; font-weight:600; color:#1A1A1A; }
-  .btn-order {
-    padding:0.6rem 1.4rem; background:#E63946; color:#FFF;
-    font-weight:600; border-radius:4px;
-  }
-
-  /* Hero */
-  .hero {
-    text-align:center; padding:4rem 2rem;
-    background:url('https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg')
-      center/cover no-repeat;
-    color:#FFF;
-  }
-  .hero h1 { font-size:2.8rem; font-weight:700; margin-bottom:1rem; }
-  .hero p { font-size:1.2rem; margin-bottom:1.5rem; }
-
-  /* Section */
-  section { padding:3rem 2rem; max-width:1100px; margin:auto; }
-
-  /* About */
-  .about { text-align:center; color:#6C6C6C; }
-
-  /* Menu Grid */
-  .menu-grid {
-    display:grid; gap:1.8rem;
-    grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
-  }
-  .menu-card {
-    border:1px solid #EEE; border-radius:8px;
-    padding:1.4rem; background:#FFF;
-  }
-  .menu-card h4 { margin:0 0.5rem 0.6rem; font-weight:600; }
-  .menu-card small { color:#6C6C6C; display:block; margin-bottom:0.5rem; }
-  .menu-card .price { font-weight:700; color:#E63946; }
-
-  /* Footer */
-  footer {
-    text-align:center; padding:1.8rem 2rem; font-size:0.9rem;
-    color:#6C6C6C; border-top:1px solid #EEE;
-  }
-
-  /* Responsive */
-  @media(max-width:768px) {
-    header { flex-direction:column; }
-    nav { margin-top:0.6rem; }
-  }
+  body{margin:0;font-family:'Inter',sans-serif;color:#1A1A1A;background:#FFF;}
+  a{text-decoration:none;color:inherit;}
+  header{display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;position:sticky;top:0;background:#fff;box-shadow:0 1px 5px rgba(0,0,0,0.1);z-index:100;}
+  .logo{font-size:2rem;font-weight:700;color:#E63946;}
+  nav a{margin:0 1rem;font-weight:600;color:#1A1A1A;}
+  .btn-order{padding:0.6rem 1.4rem;background:#E63946;color:#fff;border-radius:4px;}
+  .hero{text-align:center;padding:4rem 2rem;background:url('https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg')center/cover no-repeat;color:#fff;}
+  .hero h1{font-size:3rem;margin-bottom:1rem;}
+  .hero p{font-size:1.2rem;margin-bottom:1.5rem;}
+  section{padding:3rem 2rem;max-width:1100px;margin:auto;}
+  h2{font-weight:700;border-bottom:2px solid #E63946;padding-bottom:0.3rem;display:inline-block;}
+  .menu-grid{display:grid;gap:1.8rem;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));margin-top:1rem;}
+  .menu-card{border:1px solid #eee;border-radius:8px;padding:1rem;background:#fff;}
+  .menu-card h4{margin:0.5rem 0;font-weight:600;color:#E63946;}
+  .menu-card p{margin:0.2rem 0;color:#6C6C6C;}
+  .menu-card .price{font-weight:700;color:#1A1A1A;margin-top:0.5rem;}
+  .gallery{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;}
+  .gallery img{width:calc(33% - 1rem);border-radius:8px;}
+  footer{text-align:center;padding:1.5rem 2rem;font-size:0.9rem;color:#6C6C6C;border-top:1px solid #eee;}
+  @media(max-width:768px){.gallery img{width:calc(50% - 1rem);}}
 </style>
 </head>
 <body>
 
-<!-- Navbar -->
+<!-- NAV -->
 <header>
   <div class="logo">The Pho 2</div>
   <nav>
     <a href="#about">About</a>
     <a href="#menu">Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#location">Location</a>
     <a href="#order" class="btn-order">Order Online</a>
   </nav>
 </header>
 
-<!-- Hero -->
+<!-- HERO -->
 <section class="hero">
-  <h1>Authentic Vietnamese — Right in NYC</h1>
-  <p>Fresh pho, bold flavors, and quality ingredients.</p>
-  <a href="#order" class="btn-order">Order Now</a>
+  <h1>Authentic Vietnamese Cuisine in NYC</h1>
+  <p>Fresh pho, flavorful banh mi, rolls, and more — all made fresh daily.</p>
+  <a href="#menu" class="btn-order">Explore Menu</a>
 </section>
 
-<!-- About -->
-<section id="about" class="about">
-  <h2>About The Pho 2</h2>
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Us</h2>
   <p>
-    Nestled in the heart of New York City, The Pho 2 brings you authentic Vietnamese soups,
-    savory appetizers, and modern twists on classic favorites — crafted with care and served fast.
+    Located at 273 8th Ave in Manhattan, The Pho 2 serves delicious and affordable Vietnamese favorites like pho noodle soups, vermicelli bowls, banh mi sandwiches, and fresh rolls with authentic flavors and generous portions. :contentReference[oaicite:2]{index=2}
   </p>
 </section>
 
-<!-- Menu -->
+<!-- MENU -->
 <section id="menu">
   <h2>Our Menu</h2>
+
+  <!-- APPETIZERS -->
+  <h3>Appetizers</h3>
   <div class="menu-grid">
-
-    <!-- Example pulled from the online menu -->
-    <div class="menu-card">
-      <h4>Goi Cuon / Fresh Spring Rolls</h4>
-      <small>Lettuce, shrimp, herbs wrapped in rice paper</small>
-      <div class="price">$6.95</div>
-    </div>
-
-    <div class="menu-card">
-      <h4>Cha Gio / Fried Spring Rolls</h4>
-      <small>2 pcs, crispy pork rolls</small>
-      <div class="price">$7.50</div>
-    </div>
-
-    <div class="menu-card">
-      <h4>Edamame</h4>
-      <small>Steamed soybeans, sea salt</small>
-      <div class="price">$5.95</div>
-    </div>
-
-    <!-- Add additional items here from menu -->
-    <!-- You can auto-generate these with JS or manually paste more -->
-
+    <div class="menu-card"><h4>Summer Roll</h4><p>2 pieces — fresh rice paper, veggies, vermicelli.</p><div class="price">$8.00</div></div>
+    <div class="menu-card"><h4>Fried Spring Rolls (Pork)</h4><p>Crispy pork rolls (4 pieces).</p><div class="price">$8.00</div></div>
+    <div class="menu-card"><h4>Duck Spring Rolls</h4><p>2 pieces.</p><div class="price">$8.00</div></div>
+    <div class="menu-card"><h4>Vegetarian Steam Dumpling</h4><p>6 pieces veggie dumplings.</p><div class="price">$8.00</div></div>
   </div>
-  <p style="text-align:center; margin-top:1.5rem;">
-    Full menu and ordering through
-    <a href="https://www.thepho2ny.com/imuu4y89/the-pho-2-new-york-10011/order-online?menu=All+Day+Menu&category=Appetizers#menu-section"
-       target="_blank" style="color:#E63946;">Online Menu & Ordering</a>.
-  </p>
+
+  <!-- BANH MI -->
+  <h3>Banh Mi Sandwiches</h3>
+  <div class="menu-grid">
+    <div class="menu-card"><h4>Special Combo Banh Mi</h4><p>Pork roll, pork belly, pate, veggies.</p><div class="price">$11.00</div></div>
+    <div class="menu-card"><h4>Grilled Pork Banh Mi</h4><p>Pork sandwich with pickled veggies.</p><div class="price">$11.00</div></div>
+    <div class="menu-card"><h4>Beef Banh Mi</h4><p>Flank & brisket with fresh herbs.</p><div class="price">$11.00</div></div>
+  </div>
+
+  <!-- PHO NOODLE SOUPS -->
+  <h3>Pho Noodle Soups</h3>
+  <div class="menu-grid">
+    <div class="menu-card"><h4>Flank & Brisket Noodle Soup</h4><p>Classic pho with beef broth and noodles.</p><div class="price">$17.00</div></div>
+    <div class="menu-card"><h4>Grilled Chicken Noodle Soup</h4><p>Pho with grilled chicken.</p><div class="price">$17.00</div></div>
+    <div class="menu-card"><h4>Spicy Catfish Noodle Soup</h4><p>Spicy twist on traditional pho.</p><div class="price">$17.00</div></div>
+    <div class="menu-card"><h4>Tofu, Mushroom & Veg Noodle Soup</h4><p>Vegetarian pho option.</p><div class="price">$17.00</div></div>
+  </div>
+
+  <!-- OTHER ENTRIES -->
+  <h3>Vermicelli & Rice</h3>
+  <div class="menu-grid">
+    <div class="menu-card"><h4>Grilled Pork Chop Vermicelli</h4><p>Served with fresh herbs & veggies.</p><div class="price">$16.00</div></div>
+    <div class="menu-card"><h4>Grilled Shrimp Vermicelli</h4><p>Savory shrimp over vermicelli.</p><div class="price">$16.00</div></div>
+  </div>
+
 </section>
 
-<!-- Order CTA -->
+<!-- GALLERY -->
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="https://images.pexels.com/photos/4195304/pexels-photo-4195304.jpeg" alt="Pho bowl">
+    <img src="https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg" alt="Banh mi">
+    <img src="https://images.pexels.com/photos/3575911/pexels-photo-3575911.jpeg" alt="Vermicelli noodles">
+    <img src="https://images.pexels.com/photos/4342134/pexels-photo-4342134.jpeg" alt="Spring rolls">
+    <img src="https://images.pexels.com/photos/3771797/pexels-photo-3771797.jpeg" alt="Vietnamese drink">
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section id="location">
+  <h2>Find Us</h2>
+  <p>273 8th Ave, New York, NY 10011, USA 📍</p>
+  <!-- Interactive Map -->
+  <iframe
+    width="100%" height="350"
+    frameborder="0" style="border:0"
+    src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=273+8th+Ave+New+York+NY"
+    allowfullscreen>
+  </iframe>
+</section>
+
+<!-- ORDER CTA -->
 <section id="order" style="text-align:center;">
-  <a href="https://www.thepho2ny.com/imuu4y89/the-pho-2-new-york-10011/order-online" class="btn-order">Order Online</a>
+  <a href="https://www.thepho2ny.com/imuu4y89/the-pho-2-new-york-10011/order-online" class="btn-order" style="font-size:1.2rem;">Order Online</a>
 </section>
 
-<!-- Location & Hours -->
-<section>
-  <h2>Visit Us</h2>
-  <p>
-    123 Example Street<br>
-    New York, NY 10011<br>
-    <strong>Hours:</strong> Daily 11am – 10pm
-  </p>
-</section>
-
-<!-- Footer -->
+<!-- FOOTER -->
 <footer>
-  © 2026 The Pho 2 – All rights reserved
+  © 2026 The Pho 2 – Authentic Vietnamese Cuisine • All rights reserved
 </footer>
 
 </body>
